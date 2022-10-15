@@ -1,5 +1,16 @@
-function load() {}
+let img;
+let x = 0;
+let y = 0;
 
-function update(pCtx) {}
+function load() {
+  img = new Sprite("images/ship.png");
+}
 
-function draw(pCtx) {}
+function update() {
+  x++;
+  y++;
+}
+
+function draw(pCtx) {
+  img.draw(pCtx);
+}
